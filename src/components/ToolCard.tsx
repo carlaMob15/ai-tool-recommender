@@ -1,9 +1,39 @@
-import { RecommendationResult } from '@/lib/recommendations';
-import { formatPricing } from '@/lib/recommendations';
+interface Tool {
+  id: string;
+  name: string;
+  description: string;
+  category: 'design' | 'development' | 'productivity' | 'collaboration';
+  tags: string[];
+  url: string;
+  pricing: 'free' | 'freemium' | 'paid';
+  free: boolean;
+  useCases: string[];
+  roles?: string[];
+  clickCount: number;
+}
+
+interface RecommendationResult {
+  tool: Tool;
+  score: number;
+  reasons: string[];
+}
 
 interface ToolCardProps {
   result: RecommendationResult;
   rank: number;
+}
+
+function formatPricing(pricing: string): string {
+  switch (pricing) {
+    case 'free':
+      return 'Free';
+    case 'freemium':
+      return 'Free + Paid';
+    case 'paid':
+      return 'Paid';
+    default:
+      return pricing;
+  }
 }
 
 export default function ToolCard({ result, rank }: ToolCardProps) {
