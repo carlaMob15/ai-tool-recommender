@@ -3,14 +3,19 @@ import "./globals.css";
 import Navigation from "@/components/Navigation";
 
 export const metadata: Metadata = {
-  title: "AI Tool Recommender - Find the Perfect AI Tools for Your Workflow",
-  description: "Take our quick quiz and get personalized recommendations for AI tools that match your role, workflow, and goals. Perfect for designers, developers, and creative professionals.",
-  keywords: "AI tools, design tools, development tools, productivity tools, tool recommendations, quiz",
-  authors: [{ name: "AI Tool Recommender" }],
+  title: "AI Tool Recommender for Designers – by Web Creativity Studio",
+  description: "Discover the best AI tools for UX/UI designers, graphic designers, and frontend developers – curated by Web Creativity Studio.",
+  keywords: "AI tools, design tools, development tools, productivity tools, tool recommendations, quiz, UX/UI designers, graphic designers, frontend developers",
+  authors: [{ name: "Web Creativity Studio" }],
   openGraph: {
-    title: "AI Tool Recommender - Find the Perfect AI Tools",
-    description: "Get personalized AI tool recommendations based on your role and workflow",
+    title: "AI Tool Recommender for Designers – by Web Creativity Studio",
+    description: "Discover the best AI tools for UX/UI designers, graphic designers, and frontend developers – curated by Web Creativity Studio.",
     type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "AI Tool Recommender for Designers – by Web Creativity Studio",
+    description: "Discover the best AI tools for UX/UI designers, graphic designers, and frontend developers – curated by Web Creativity Studio.",
   },
 };
 

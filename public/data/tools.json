@@ -8,7 +8,8 @@
       "tags": ["ui-design", "prototyping", "collaboration"],
       "url": "https://figma.com",
       "pricing": "freemium",
-      "useCase": ["ui-design", "prototyping", "design-systems"]
+      "useCase": ["ui-design", "prototyping", "design-systems"],
+      "roles": ["ux-ui-designer", "graphic-designer"]
     },
     {
       "id": "midjourney",
@@ -18,7 +19,8 @@
       "tags": ["ai-art", "image-generation", "creative"],
       "url": "https://midjourney.com",
       "pricing": "paid",
-      "useCase": ["concept-art", "illustrations", "marketing-assets"]
+      "useCase": ["concept-art", "illustrations", "marketing-assets"],
+      "roles": ["graphic-designer"]
     },
     {
       "id": "canva",
@@ -28,7 +30,8 @@
       "tags": ["graphic-design", "templates", "marketing"],
       "url": "https://canva.com",
       "pricing": "freemium",
-      "useCase": ["social-media", "presentations", "marketing-materials"]
+      "useCase": ["social-media", "presentations", "marketing-materials"],
+      "roles": ["graphic-designer", "ux-ui-designer"]
     },
     {
       "id": "adobe-firefly",
@@ -38,7 +41,8 @@
       "tags": ["ai-art", "adobe", "creative-suite"],
       "url": "https://firefly.adobe.com",
       "pricing": "paid",
-      "useCase": ["image-generation", "text-effects", "creative-projects"]
+      "useCase": ["image-generation", "text-effects", "creative-projects"],
+      "roles": ["graphic-designer"]
     },
     {
       "id": "github-copilot",
@@ -48,7 +52,8 @@
       "tags": ["code-completion", "ai-coding", "productivity"],
       "url": "https://github.com/features/copilot",
       "pricing": "paid",
-      "useCase": ["code-generation", "debugging", "learning"]
+      "useCase": ["code-generation", "debugging", "learning"],
+      "roles": ["frontend-dev"]
     },
     {
       "id": "cursor",
@@ -58,7 +63,8 @@
       "tags": ["code-editor", "ai-coding", "productivity"],
       "url": "https://cursor.sh",
       "pricing": "freemium",
-      "useCase": ["code-generation", "refactoring", "debugging"]
+      "useCase": ["code-generation", "refactoring", "debugging"],
+      "roles": ["frontend-dev"]
     },
     {
       "id": "replit",
@@ -68,7 +74,8 @@
       "tags": ["online-ide", "collaboration", "ai-coding"],
       "url": "https://replit.com",
       "pricing": "freemium",
-      "useCase": ["prototyping", "learning", "collaborative-coding"]
+      "useCase": ["prototyping", "learning", "collaborative-coding"],
+      "roles": ["frontend-dev"]
     },
     {
       "id": "tabnine",
@@ -78,7 +85,8 @@
       "tags": ["code-completion", "ai-coding", "productivity"],
       "url": "https://tabnine.com",
       "pricing": "freemium",
-      "useCase": ["code-completion", "productivity", "learning"]
+      "useCase": ["code-completion", "productivity", "learning"],
+      "roles": ["frontend-dev"]
     },
     {
       "id": "notion-ai",
@@ -88,7 +96,8 @@
       "tags": ["note-taking", "project-management", "ai-writing"],
       "url": "https://notion.so",
       "pricing": "freemium",
-      "useCase": ["documentation", "project-planning", "knowledge-management"]
+      "useCase": ["documentation", "project-planning", "knowledge-management"],
+      "roles": ["ux-ui-designer", "graphic-designer", "frontend-dev"]
     },
     {
       "id": "chatgpt",
@@ -98,7 +107,8 @@
       "tags": ["ai-chat", "writing", "problem-solving"],
       "url": "https://chat.openai.com",
       "pricing": "freemium",
-      "useCase": ["writing", "research", "problem-solving"]
+      "useCase": ["writing", "research", "problem-solving"],
+      "roles": ["ux-ui-designer", "graphic-designer", "frontend-dev"]
     },
     {
       "id": "claude",
@@ -108,7 +118,8 @@
       "tags": ["ai-chat", "writing", "analysis"],
       "url": "https://claude.ai",
       "pricing": "freemium",
-      "useCase": ["writing", "analysis", "research"]
+      "useCase": ["writing", "analysis", "research"],
+      "roles": ["ux-ui-designer", "graphic-designer", "frontend-dev"]
     },
     {
       "id": "gamma",
@@ -118,7 +129,8 @@
       "tags": ["presentations", "ai-writing", "design"],
       "url": "https://gamma.app",
       "pricing": "freemium",
-      "useCase": ["presentations", "reports", "documentation"]
+      "useCase": ["presentations", "reports", "documentation"],
+      "roles": ["ux-ui-designer", "graphic-designer"]
     },
     {
       "id": "miro",
@@ -128,7 +140,8 @@
       "tags": ["whiteboarding", "collaboration", "brainstorming"],
       "url": "https://miro.com",
       "pricing": "freemium",
-      "useCase": ["brainstorming", "planning", "design-thinking"]
+      "useCase": ["brainstorming", "planning", "design-thinking"],
+      "roles": ["ux-ui-designer", "graphic-designer"]
     },
     {
       "id": "slack",
@@ -138,7 +151,8 @@
       "tags": ["communication", "team-collaboration", "productivity"],
       "url": "https://slack.com",
       "pricing": "freemium",
-      "useCase": ["team-communication", "project-coordination", "knowledge-sharing"]
+      "useCase": ["team-communication", "project-coordination", "knowledge-sharing"],
+      "roles": ["ux-ui-designer", "graphic-designer", "frontend-dev"]
     },
     {
       "id": "linear",
@@ -148,7 +162,8 @@
       "tags": ["project-management", "issue-tracking", "productivity"],
       "url": "https://linear.app",
       "pricing": "freemium",
-      "useCase": ["project-management", "issue-tracking", "team-coordination"]
+      "useCase": ["project-management", "issue-tracking", "team-coordination"],
+      "roles": ["ux-ui-designer", "graphic-designer", "frontend-dev"]
     }
   ],
   "categories": {
