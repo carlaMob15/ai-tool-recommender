@@ -1,0 +1,145 @@
+[
+  {
+    "name": "Figma",
+    "category": "Design",
+    "description": "Collaborative interface design tool with powerful prototyping features",
+    "free": true,
+    "link": "https://www.figma.com",
+    "tags": [
+      "design",
+      "prototyping",
+      "ux/ui"
+    ],
+    "roles": [
+      "ux/ui-designer"
+    ],
+    "useCases": [
+      "wireframing",
+      "prototyping",
+      "visual design"
+    ],
+    "clickCount": 95
+  },
+  {
+    "name": "Canva",
+    "category": "Design",
+    "description": "Easy-to-use graphic design platform with AI-powered features",
+    "free": true,
+    "link": "https://www.canva.com",
+    "tags": [
+      "design",
+      "graphic",
+      "presentation"
+    ],
+    "roles": [
+      "graphic-designer"
+    ],
+    "useCases": [
+      "visual design",
+      "content creation"
+    ],
+    "clickCount": 92
+  },
+  {
+    "name": "Replit",
+    "category": "Development",
+    "description": "Online IDE with AI-powered coding assistance",
+    "free": true,
+    "link": "https://replit.com",
+    "tags": [
+      "development",
+      "codegen"
+    ],
+    "roles": [
+      "frontend-developer"
+    ],
+    "useCases": [
+      "coding",
+      "prototyping"
+    ],
+    "clickCount": 68
+  },
+  {
+    "name": "Maze",
+    "category": "Research",
+    "description": "User testing and surveys made fast for product teams",
+    "free": false,
+    "link": "https://maze.co",
+    "tags": [
+      "user testing",
+      "research"
+    ],
+    "roles": [
+      "ux/ui-designer"
+    ],
+    "useCases": [
+      "user research",
+      "testing",
+      "feedback collection"
+    ],
+    "clickCount": 81
+  },
+  {
+    "name": "Dovetail",
+    "category": "Research Repository",
+    "description": "Centralise, analyse, and share your user research",
+    "free": false,
+    "link": "https://dovetailapp.com",
+    "tags": [
+      "research",
+      "repository"
+    ],
+    "roles": [
+      "ux/ui-designer",
+      "product-designer"
+    ],
+    "useCases": [
+      "user research",
+      "qualitative analysis"
+    ],
+    "clickCount": 79
+  },
+  {
+    "name": "Lovable",
+    "category": "UX Copy",
+    "description": "Craft product copy that sounds human \u2014 driven by real tone of voice.",
+    "free": false,
+    "link": "https://www.lovable.so",
+    "tags": [
+      "copywriting",
+      "ux",
+      "tone"
+    ],
+    "roles": [
+      "ux-designer",
+      "product-designer"
+    ],
+    "useCases": [
+      "ux writing",
+      "content creation",
+      "microcopy"
+    ],
+    "clickCount": 84
+  },
+  {
+    "name": "V0",
+    "category": "AI UI Builder",
+    "description": "Generate full React components from simple prompts.",
+    "free": true,
+    "link": "https://v0.dev",
+    "tags": [
+      "prompt-ui",
+      "codegen",
+      "builder"
+    ],
+    "roles": [
+      "frontend-dev",
+      "ux-designer"
+    ],
+    "useCases": [
+      "wireframing",
+      "coding"
+    ],
+    "clickCount": 88
+  }
+]

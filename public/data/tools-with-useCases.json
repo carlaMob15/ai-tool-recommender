@@ -8,6 +8,7 @@
       "tags": ["ui-design", "prototyping", "collaboration"],
       "url": "https://figma.com",
       "pricing": "freemium",
+      "free": true,
       "useCases": ["wireframing", "prototyping", "ui-design", "design-systems", "collaboration"],
       "roles": ["ux-ui-designer", "graphic-designer"],
       "clickCount": 95
@@ -20,6 +21,7 @@
       "tags": ["ai-art", "image-generation", "creative"],
       "url": "https://midjourney.com",
       "pricing": "paid",
+      "free": false,
       "useCases": ["visual-design", "image-generation", "concept-art", "illustrations", "marketing-assets"],
       "roles": ["graphic-designer"],
       "clickCount": 88
@@ -32,6 +34,7 @@
       "tags": ["graphic-design", "templates", "marketing"],
       "url": "https://canva.com",
       "pricing": "freemium",
+      "free": true,
       "useCases": ["visual-design", "social-media", "presentations", "marketing-materials", "templates"],
       "roles": ["graphic-designer", "ux-ui-designer"],
       "clickCount": 92
@@ -44,6 +47,7 @@
       "tags": ["ai-art", "adobe", "creative-suite"],
       "url": "https://firefly.adobe.com",
       "pricing": "paid",
+      "free": false,
       "useCases": ["visual-design", "image-generation", "text-effects", "creative-projects"],
       "roles": ["graphic-designer"],
       "clickCount": 75
@@ -56,6 +60,7 @@
       "tags": ["code-completion", "ai-coding", "productivity"],
       "url": "https://github.com/features/copilot",
       "pricing": "paid",
+      "free": false,
       "useCases": ["coding", "code-generation", "debugging", "learning"],
       "roles": ["frontend-dev"],
       "clickCount": 90
@@ -68,6 +73,7 @@
       "tags": ["code-editor", "ai-coding", "productivity"],
       "url": "https://cursor.sh",
       "pricing": "freemium",
+      "free": true,
       "useCases": ["coding", "code-generation", "refactoring", "debugging"],
       "roles": ["frontend-dev"],
       "clickCount": 82
@@ -80,6 +86,7 @@
       "tags": ["online-ide", "collaboration", "ai-coding"],
       "url": "https://replit.com",
       "pricing": "freemium",
+      "free": true,
       "useCases": ["coding", "prototyping", "learning", "collaborative-coding"],
       "roles": ["frontend-dev"],
       "clickCount": 68
@@ -92,6 +99,7 @@
       "tags": ["code-completion", "ai-coding", "productivity"],
       "url": "https://tabnine.com",
       "pricing": "freemium",
+      "free": true,
       "useCases": ["coding", "code-completion", "productivity", "learning"],
       "roles": ["frontend-dev"],
       "clickCount": 72
@@ -104,6 +112,7 @@
       "tags": ["note-taking", "project-management", "ai-writing"],
       "url": "https://notion.so",
       "pricing": "freemium",
+      "free": true,
       "useCases": ["documentation", "project-planning", "knowledge-management", "productivity"],
       "roles": ["ux-ui-designer", "graphic-designer", "frontend-dev"],
       "clickCount": 85
@@ -116,6 +125,7 @@
       "tags": ["ai-chat", "writing", "problem-solving"],
       "url": "https://chat.openai.com",
       "pricing": "freemium",
+      "free": true,
       "useCases": ["writing", "research", "problem-solving", "productivity"],
       "roles": ["ux-ui-designer", "graphic-designer", "frontend-dev"],
       "clickCount": 98
@@ -128,6 +138,7 @@
       "tags": ["ai-chat", "writing", "analysis"],
       "url": "https://claude.ai",
       "pricing": "freemium",
+      "free": true,
       "useCases": ["writing", "analysis", "research", "productivity"],
       "roles": ["ux-ui-designer", "graphic-designer", "frontend-dev"],
       "clickCount": 78
@@ -140,6 +151,7 @@
       "tags": ["presentations", "ai-writing", "design"],
       "url": "https://gamma.app",
       "pricing": "freemium",
+      "free": true,
       "useCases": ["presentations", "reports", "documentation", "productivity"],
       "roles": ["ux-ui-designer", "graphic-designer"],
       "clickCount": 65
@@ -152,6 +164,7 @@
       "tags": ["whiteboarding", "collaboration", "brainstorming"],
       "url": "https://miro.com",
       "pricing": "freemium",
+      "free": true,
       "useCases": ["brainstorming", "planning", "design-thinking", "collaboration"],
       "roles": ["ux-ui-designer", "graphic-designer"],
       "clickCount": 80
@@ -164,6 +177,7 @@
       "tags": ["communication", "team-collaboration", "productivity"],
       "url": "https://slack.com",
       "pricing": "freemium",
+      "free": true,
       "useCases": ["team-communication", "project-coordination", "knowledge-sharing", "collaboration"],
       "roles": ["ux-ui-designer", "graphic-designer", "frontend-dev"],
       "clickCount": 87
@@ -176,6 +190,7 @@
       "tags": ["project-management", "issue-tracking", "productivity"],
       "url": "https://linear.app",
       "pricing": "freemium",
+      "free": true,
       "useCases": ["project-management", "issue-tracking", "team-coordination", "collaboration"],
       "roles": ["ux-ui-designer", "graphic-designer", "frontend-dev"],
       "clickCount": 70
@@ -188,6 +203,7 @@
       "tags": ["user-research", "feedback", "ai-analysis", "customer-insights"],
       "url": "https://lovable.ai",
       "pricing": "freemium",
+      "free": true,
       "useCases": ["user-research", "feedback-collection", "customer-insights", "product-validation"],
       "roles": ["ux-ui-designer", "graphic-designer"],
       "clickCount": 73
@@ -200,6 +216,7 @@
       "tags": ["design-systems", "components", "ai-design", "prototyping"],
       "url": "https://bolt.com",
       "pricing": "paid",
+      "free": false,
       "useCases": ["design-systems", "component-libraries", "prototyping", "ui-design", "wireframing"],
       "roles": ["ux-ui-designer", "graphic-designer"],
       "clickCount": 67
@@ -212,6 +229,7 @@
       "tags": ["code-generation", "ai-coding", "development", "productivity"],
       "url": "https://v0.dev",
       "pricing": "freemium",
+      "free": true,
       "useCases": ["coding", "code-generation", "prototyping", "development", "learning"],
       "roles": ["frontend-dev"],
       "clickCount": 76
@@ -224,6 +242,7 @@
       "tags": ["prototyping", "collaboration", "ai-design", "ui-design"],
       "url": "https://subframe.com",
       "pricing": "freemium",
+      "free": true,
       "useCases": ["prototyping", "design-collaboration", "ui-design", "user-testing", "wireframing"],
       "roles": ["ux-ui-designer", "graphic-designer"],
       "clickCount": 69
@@ -236,6 +255,7 @@
       "tags": ["design-automation", "workflow", "ai-design", "figma"],
       "url": "https://figma.com/make",
       "pricing": "paid",
+      "free": false,
       "useCases": ["design-automation", "workflow-optimization", "design-systems", "prototyping", "wireframing"],
       "roles": ["ux-ui-designer", "graphic-designer"],
       "clickCount": 71
@@ -247,4 +267,4 @@
     "productivity": "Productivity & Writing",
     "collaboration": "Collaboration & Communication"
   }
-}
+} 

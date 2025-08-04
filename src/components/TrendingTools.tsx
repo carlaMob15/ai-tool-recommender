@@ -27,7 +27,7 @@ export default function TrendingTools() {
         setLoading(true);
         
         // Fetch tools from local tools.json
-        const response = await fetch('/data/tools.json');
+        const response = await fetch('/data/tools-with-useCases.json');
         if (!response.ok) {
           throw new Error('Failed to fetch tools data');
         }

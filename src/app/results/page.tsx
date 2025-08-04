@@ -13,7 +13,10 @@ interface Tool {
   tags: string[];
   url: string;
   pricing: 'free' | 'freemium' | 'paid';
-  useCase: string[];
+  free: boolean;
+  useCases: string[];
+  roles?: string[];
+  clickCount: number;
 }
 
 interface ToolsData {
@@ -38,49 +41,42 @@ function matchTools(tools: Tool[], role: string, task: string, preference: strin
       let score = 0;
       const reasons: string[] = [];
 
-      // Match role
-      const roleMatches = {
-        'ux-ui-designer': ['design', 'ui-design', 'prototyping'],
-        'graphic-designer': ['design', 'graphic-design', 'visual-design'],
-        'frontend-dev': ['development', 'coding', 'frontend']
-      };
-
-      const roleTags = roleMatches[role as keyof typeof roleMatches] || [];
-      const hasRoleMatch = roleTags.some(tag => 
-        tool.tags.includes(tag) || tool.useCase.includes(tag) || tool.category === tag
+      // +3 points if the selected task is found in useCases
+      const taskLower = task.toLowerCase();
+      const hasTaskMatch = tool.useCases.some(useCase => 
+        useCase.toLowerCase().includes(taskLower) || taskLower.includes(useCase.toLowerCase())
       );
 
-      if (hasRoleMatch) {
-        score += 2;
-        reasons.push(`Perfect for ${role.replace('-', ' ')}`);
+      if (hasTaskMatch) {
+        score += 3;
+        reasons.push(`Perfect for ${task}`);
       }
 
-      // Match task (based on tags)
-      const taskMatches = tool.tags.filter(tag => 
-        tag.toLowerCase().includes(task.toLowerCase())
-      );
-      
-      if (taskMatches.length > 0) {
+      // +2 points if the role is in roles
+      if (tool.roles && tool.roles.includes(role)) {
         score += 2;
-        reasons.push(`Great for ${task}`);
+        reasons.push(`Great for ${role.replace('-', ' ')}`);
       }
 
-      // Match free/paid preference
-      if (preference === 'free' && tool.pricing === 'free') {
+      // +1 point if tool.free === true and preference === 'free', or vice versa
+      if (preference === 'free' && tool.free === true) {
         score += 1;
         reasons.push('Free tool as requested');
-      } else if (preference === 'free' && tool.pricing === 'freemium') {
-        score += 0.5;
-        reasons.push('Free tier available');
-      } else if (preference === 'paid' && (tool.pricing === 'paid' || tool.pricing === 'freemium')) {
+      } else if (preference === 'paid' && tool.free === false) {
         score += 1;
-        reasons.push('Premium features available');
+        reasons.push('Premium tool as requested');
       }
 
       return { ...tool, score, reasons };
     })
-    .filter(tool => tool.score > 0) // Only include tools with some relevance
-    .sort((a, b) => b.score - a.score) // highest score first
+    .filter(tool => tool.score > 0) // Do not recommend tools with score = 0
+    .sort((a, b) => {
+      // Sort by score (desc), then by clickCount (desc) as tiebreaker
+      if (b.score !== a.score) {
+        return b.score - a.score;
+      }
+      return b.clickCount - a.clickCount;
+    })
     .slice(0, 5); // return top 5 tools
 }
 
@@ -95,8 +91,8 @@ export default function ResultsPage() {
   useEffect(() => {
     const loadToolsAndMatch = async () => {
       try {
-        // Step 2: Load tools.json
-        const response = await fetch('/data/tools.json');
+        // Step 2: Load tools-with-useCases.json
+        const response = await fetch('/data/tools-with-useCases.json');
         const data: ToolsData = await response.json();
         setToolsData(data);
 
@@ -111,7 +107,14 @@ export default function ResultsPage() {
           setMatchedTools(matched);
 
           // Step 5: Add a fallback
-          const fallback = data.tools.slice(0, 5);
+          const fallback = data.tools
+            .sort((a, b) => b.clickCount - a.clickCount) // Sort by popularity
+            .slice(0, 5)
+            .map(tool => ({
+              ...tool,
+              score: 0,
+              reasons: ['Popular tool']
+            }));
           setFallbackTools(fallback);
         }
       } catch (error) {
