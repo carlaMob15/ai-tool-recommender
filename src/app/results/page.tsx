@@ -9,7 +9,7 @@ interface Tool {
   id: string;
   name: string;
   description: string;
-  category: 'design' | 'development' | 'productivity' | 'collaboration';
+  category: 'design' | 'development' | 'productivity' | 'collaboration' | 'research';
   tags: string[];
   url: string;
   pricing: 'free' | 'freemium' | 'paid';
@@ -17,6 +17,7 @@ interface Tool {
   useCases: string[];
   roles?: string[];
   clickCount: number;
+  isResearchTool?: boolean;
 }
 
 interface ToolsData {
@@ -26,6 +27,7 @@ interface ToolsData {
     development: string;
     productivity: string;
     collaboration: string;
+    research: string;
   };
 }
 
@@ -41,30 +43,42 @@ function matchTools(tools: Tool[], role: string, task: string, preference: strin
       let score = 0;
       const reasons: string[] = [];
 
-      // +3 points if the selected task is found in useCases
+      // +3 points for exact task match in useCases
       const taskLower = task.toLowerCase();
-      const hasTaskMatch = tool.useCases.some(useCase => 
+      const hasExactTaskMatch = tool.useCases.some(useCase => 
+        useCase.toLowerCase() === taskLower
+      );
+      const hasPartialTaskMatch = tool.useCases.some(useCase => 
         useCase.toLowerCase().includes(taskLower) || taskLower.includes(useCase.toLowerCase())
       );
 
-      if (hasTaskMatch) {
+      if (hasExactTaskMatch) {
         score += 3;
         reasons.push(`Perfect for ${task}`);
+      } else if (hasPartialTaskMatch) {
+        score += 2;
+        reasons.push(`Great for ${task}`);
       }
 
-      // +2 points if the role is in roles
+      // +2 points if role matches
       if (tool.roles && tool.roles.includes(role)) {
         score += 2;
         reasons.push(`Great for ${role.replace('-', ' ')}`);
       }
 
-      // +1 point if tool.free === true and preference === 'free', or vice versa
+      // +1 point if free matches user preference
       if (preference === 'free' && tool.free === true) {
         score += 1;
         reasons.push('Free tool as requested');
       } else if (preference === 'paid' && tool.free === false) {
         score += 1;
         reasons.push('Premium tool as requested');
+      }
+
+      // BONUS: +1 if isResearchTool === true when task is "user-research"
+      if (task.toLowerCase() === 'user-research' && tool.isResearchTool === true) {
+        score += 1;
+        reasons.push('Specialized research tool');
       }
 
       return { ...tool, score, reasons };

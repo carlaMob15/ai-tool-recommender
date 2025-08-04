@@ -2,7 +2,7 @@ interface Tool {
   id: string;
   name: string;
   description: string;
-  category: 'design' | 'development' | 'productivity' | 'collaboration';
+  category: 'design' | 'development' | 'productivity' | 'collaboration' | 'research';
   tags: string[];
   url: string;
   pricing: 'free' | 'freemium' | 'paid';
@@ -10,6 +10,7 @@ interface Tool {
   useCases: string[];
   roles?: string[];
   clickCount: number;
+  isResearchTool?: boolean;
 }
 
 interface RecommendationResult {
@@ -49,6 +50,8 @@ export default function ToolCard({ result, rank }: ToolCardProps) {
         return 'bg-green-100 text-green-800';
       case 'collaboration':
         return 'bg-orange-100 text-orange-800';
+      case 'research':
+        return 'bg-pink-100 text-pink-800';
       default:
         return 'bg-gray-100 text-gray-800';
     }

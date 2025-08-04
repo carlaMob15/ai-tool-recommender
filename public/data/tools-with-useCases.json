@@ -165,7 +165,7 @@
       "url": "https://miro.com",
       "pricing": "freemium",
       "free": true,
-      "useCases": ["brainstorming", "planning", "design-thinking", "collaboration"],
+      "useCases": ["brainstorming", "planning", "design-thinking", "collaboration", "user-research", "journey-mapping", "workshops"],
       "roles": ["ux-ui-designer", "graphic-designer"],
       "clickCount": 80
     },
@@ -259,12 +259,82 @@
       "useCases": ["design-automation", "workflow-optimization", "design-systems", "prototyping", "wireframing"],
       "roles": ["ux-ui-designer", "graphic-designer"],
       "clickCount": 71
+    },
+    {
+      "id": "maze",
+      "name": "Maze",
+      "description": "Rapid testing platform for prototypes, concepts, and user flows",
+      "category": "research",
+      "tags": ["user testing", "surveys"],
+      "url": "https://maze.co",
+      "pricing": "freemium",
+      "free": true,
+      "useCases": ["user-research", "testing", "usability"],
+      "roles": ["ux-ui-designer"],
+      "clickCount": 80,
+      "isResearchTool": true
+    },
+    {
+      "id": "lookback",
+      "name": "Lookback",
+      "description": "Live and recorded user research sessions with video, audio, and notes",
+      "category": "research",
+      "tags": ["interviews", "usability"],
+      "url": "https://lookback.io",
+      "pricing": "paid",
+      "free": false,
+      "useCases": ["user-research", "interviews"],
+      "roles": ["ux-ui-designer", "product-manager"],
+      "clickCount": 70,
+      "isResearchTool": true
+    },
+    {
+      "id": "dovetail",
+      "name": "Dovetail",
+      "description": "Analyse research data and highlight themes with tagging and transcription",
+      "category": "research",
+      "tags": ["analysis", "transcription"],
+      "url": "https://dovetailapp.com",
+      "pricing": "paid",
+      "free": false,
+      "useCases": ["user-research", "analysis", "repository"],
+      "roles": ["ux-ui-designer", "researcher"],
+      "clickCount": 72,
+      "isResearchTool": true
+    },
+    {
+      "id": "useberry",
+      "name": "Useberry",
+      "description": "Test UX prototypes and record user flows without code",
+      "category": "research",
+      "tags": ["usability", "testing"],
+      "url": "https://useberry.com",
+      "pricing": "freemium",
+      "free": true,
+      "useCases": ["user-research", "testing"],
+      "roles": ["ux-ui-designer"],
+      "clickCount": 68,
+      "isResearchTool": true
+    },
+    {
+      "id": "tally",
+      "name": "Tally",
+      "description": "Lightweight form and survey tool, good for user input",
+      "category": "research",
+      "tags": ["surveys", "feedback"],
+      "url": "https://tally.so",
+      "pricing": "freemium",
+      "free": true,
+      "useCases": ["user-research", "survey"],
+      "roles": ["ux-ui-designer", "graphic-designer"],
+      "clickCount": 65
     }
   ],
   "categories": {
     "design": "Design & Creative",
     "development": "Development & Coding",
     "productivity": "Productivity & Writing",
-    "collaboration": "Collaboration & Communication"
+    "collaboration": "Collaboration & Communication",
+    "research": "Research & User Testing"
   }
 } 
