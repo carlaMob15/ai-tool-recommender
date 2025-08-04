@@ -9,7 +9,8 @@
       "url": "https://figma.com",
       "pricing": "freemium",
       "useCase": ["ui-design", "prototyping", "design-systems"],
-      "roles": ["ux-ui-designer", "graphic-designer"]
+      "roles": ["ux-ui-designer", "graphic-designer"],
+      "clickCount": 95
     },
     {
       "id": "midjourney",
@@ -20,7 +21,8 @@
       "url": "https://midjourney.com",
       "pricing": "paid",
       "useCase": ["concept-art", "illustrations", "marketing-assets"],
-      "roles": ["graphic-designer"]
+      "roles": ["graphic-designer"],
+      "clickCount": 88
     },
     {
       "id": "canva",
@@ -31,7 +33,8 @@
       "url": "https://canva.com",
       "pricing": "freemium",
       "useCase": ["social-media", "presentations", "marketing-materials"],
-      "roles": ["graphic-designer", "ux-ui-designer"]
+      "roles": ["graphic-designer", "ux-ui-designer"],
+      "clickCount": 92
     },
     {
       "id": "adobe-firefly",
@@ -42,7 +45,8 @@
       "url": "https://firefly.adobe.com",
       "pricing": "paid",
       "useCase": ["image-generation", "text-effects", "creative-projects"],
-      "roles": ["graphic-designer"]
+      "roles": ["graphic-designer"],
+      "clickCount": 75
     },
     {
       "id": "github-copilot",
@@ -53,7 +57,8 @@
       "url": "https://github.com/features/copilot",
       "pricing": "paid",
       "useCase": ["code-generation", "debugging", "learning"],
-      "roles": ["frontend-dev"]
+      "roles": ["frontend-dev"],
+      "clickCount": 90
     },
     {
       "id": "cursor",
@@ -64,7 +69,8 @@
       "url": "https://cursor.sh",
       "pricing": "freemium",
       "useCase": ["code-generation", "refactoring", "debugging"],
-      "roles": ["frontend-dev"]
+      "roles": ["frontend-dev"],
+      "clickCount": 82
     },
     {
       "id": "replit",
@@ -75,7 +81,8 @@
       "url": "https://replit.com",
       "pricing": "freemium",
       "useCase": ["prototyping", "learning", "collaborative-coding"],
-      "roles": ["frontend-dev"]
+      "roles": ["frontend-dev"],
+      "clickCount": 68
     },
     {
       "id": "tabnine",
@@ -86,7 +93,8 @@
       "url": "https://tabnine.com",
       "pricing": "freemium",
       "useCase": ["code-completion", "productivity", "learning"],
-      "roles": ["frontend-dev"]
+      "roles": ["frontend-dev"],
+      "clickCount": 72
     },
     {
       "id": "notion-ai",
@@ -97,7 +105,8 @@
       "url": "https://notion.so",
       "pricing": "freemium",
       "useCase": ["documentation", "project-planning", "knowledge-management"],
-      "roles": ["ux-ui-designer", "graphic-designer", "frontend-dev"]
+      "roles": ["ux-ui-designer", "graphic-designer", "frontend-dev"],
+      "clickCount": 85
     },
     {
       "id": "chatgpt",
@@ -108,7 +117,8 @@
       "url": "https://chat.openai.com",
       "pricing": "freemium",
       "useCase": ["writing", "research", "problem-solving"],
-      "roles": ["ux-ui-designer", "graphic-designer", "frontend-dev"]
+      "roles": ["ux-ui-designer", "graphic-designer", "frontend-dev"],
+      "clickCount": 98
     },
     {
       "id": "claude",
@@ -119,7 +129,8 @@
       "url": "https://claude.ai",
       "pricing": "freemium",
       "useCase": ["writing", "analysis", "research"],
-      "roles": ["ux-ui-designer", "graphic-designer", "frontend-dev"]
+      "roles": ["ux-ui-designer", "graphic-designer", "frontend-dev"],
+      "clickCount": 78
     },
     {
       "id": "gamma",
@@ -130,7 +141,8 @@
       "url": "https://gamma.app",
       "pricing": "freemium",
       "useCase": ["presentations", "reports", "documentation"],
-      "roles": ["ux-ui-designer", "graphic-designer"]
+      "roles": ["ux-ui-designer", "graphic-designer"],
+      "clickCount": 65
     },
     {
       "id": "miro",
@@ -141,7 +153,8 @@
       "url": "https://miro.com",
       "pricing": "freemium",
       "useCase": ["brainstorming", "planning", "design-thinking"],
-      "roles": ["ux-ui-designer", "graphic-designer"]
+      "roles": ["ux-ui-designer", "graphic-designer"],
+      "clickCount": 80
     },
     {
       "id": "slack",
@@ -152,7 +165,8 @@
       "url": "https://slack.com",
       "pricing": "freemium",
       "useCase": ["team-communication", "project-coordination", "knowledge-sharing"],
-      "roles": ["ux-ui-designer", "graphic-designer", "frontend-dev"]
+      "roles": ["ux-ui-designer", "graphic-designer", "frontend-dev"],
+      "clickCount": 87
     },
     {
       "id": "linear",
@@ -163,7 +177,68 @@
       "url": "https://linear.app",
       "pricing": "freemium",
       "useCase": ["project-management", "issue-tracking", "team-coordination"],
-      "roles": ["ux-ui-designer", "graphic-designer", "frontend-dev"]
+      "roles": ["ux-ui-designer", "graphic-designer", "frontend-dev"],
+      "clickCount": 70
+    },
+    {
+      "id": "lovable",
+      "name": "Lovable",
+      "description": "AI-powered user research and feedback collection platform",
+      "category": "productivity",
+      "tags": ["user-research", "feedback", "ai-analysis", "customer-insights"],
+      "url": "https://lovable.ai",
+      "pricing": "freemium",
+      "useCase": ["user-research", "feedback-collection", "customer-insights", "product-validation"],
+      "roles": ["ux-ui-designer", "graphic-designer"],
+      "clickCount": 73
+    },
+    {
+      "id": "bolt",
+      "name": "Bolt",
+      "description": "AI-powered design system and component library generator",
+      "category": "design",
+      "tags": ["design-systems", "components", "ai-design", "prototyping"],
+      "url": "https://bolt.com",
+      "pricing": "paid",
+      "useCase": ["design-systems", "component-libraries", "prototyping", "ui-design"],
+      "roles": ["ux-ui-designer", "graphic-designer"],
+      "clickCount": 67
+    },
+    {
+      "id": "v0",
+      "name": "V0",
+      "description": "AI-powered code generation and development platform",
+      "category": "development",
+      "tags": ["code-generation", "ai-coding", "development", "productivity"],
+      "url": "https://v0.dev",
+      "pricing": "freemium",
+      "useCase": ["code-generation", "prototyping", "development", "learning"],
+      "roles": ["frontend-dev"],
+      "clickCount": 76
+    },
+    {
+      "id": "subframe",
+      "name": "Subframe",
+      "description": "AI-powered design collaboration and prototyping tool",
+      "category": "design",
+      "tags": ["prototyping", "collaboration", "ai-design", "ui-design"],
+      "url": "https://subframe.com",
+      "pricing": "freemium",
+      "useCase": ["prototyping", "design-collaboration", "ui-design", "user-testing"],
+      "roles": ["ux-ui-designer", "graphic-designer"],
+      "clickCount": 69
+    },
+    {
+      "id": "figma-make",
+      "name": "Figma Make",
+      "description": "Figma's AI-powered design automation and workflow tool",
+      "category": "design",
+      "tags": ["design-automation", "workflow", "ai-design", "figma"],
+      "url": "https://figma.com/make",
+      "pricing": "paid",
+      "useCase": ["design-automation", "workflow-optimization", "design-systems", "prototyping"],
+      "roles": ["ux-ui-designer", "graphic-designer"],
+      "clickCount": 71
     }
   ],
   "categories": {
